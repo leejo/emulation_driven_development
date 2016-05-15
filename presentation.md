@@ -27,10 +27,15 @@ Note:
 
 ### [Business::Mondo](https://metacpan.org/release/Business-Mondo)
 
+<p class="fragment"> [Business::GoCardless](https://metacpan.org/release/Business-GoCardless) </p>
+
+<p class="fragment"> [Business::Fixflo](https://metacpan.org/release/Business-Fixflo) </p>
+
 Note:
 - which uses *two* auth code grants
 - the one MPOS supported, and password grant that it didn't
 - and i need to emulate that
+- learned from other modules i've written
 
 ---
 
@@ -88,6 +93,68 @@ Expanded data vs References.
 
 Errors in the headers vs body vs HTTP status codes.
 
+Note:
+- all these differences
+- and more...
+
+---
+
+![mondo](img/08_mondo.png)
+
+Note:
+- mondo
+- sensible?
+
+---
+
+![stripe](img/09_stripe.png)
+
+Note:
+- stripe
+- epoch times?
+- lower case currency codes?
+
+---
+
+![gocardless](img/10_gocardless.png)
+
+Note:
+- gocardless
+- Does that mean we will get a 400 code with long refs?
+
+---
+
+![paypal](img/11_paypal.png)
+
+Note:
+- paypal
+- so i can't use the API to access non-API based payments?
+- disparate databases perhaps?
+
+---
+
+![campaignmonitor](img/12_campaignmonitor.png)
+
+Note:
+- campaignmonitor
+- returns XML except when it doesn't
+
+---
+
+![facebook](img/13_facebook.png)
+
+Note:
+- facebook
+- base64 encoded simple strings? (mistakes in the docs perhaps?)
+
+---
+
+![twitter](img/14_twitter.png)
+
+Note:
+- twitter
+- uses GeoJSON specification except co-ordinates are reversed?
+
 ---
 
 "If the object returns application specific objects, messages and errors that should be acted on and these objects are valid a 200 response will be returned. Conversely, HTTP errors are considered exactly that... transport, non-application errors."
@@ -118,6 +185,12 @@ Note:
 ---
 
 ## Every API is a beautiful and unique snowflake.
+
+---
+
+## But that doesn't bother me
+
+(I'm not into bikeshedding)
 
 ---
 
@@ -279,6 +352,7 @@ Note:
 ![](img/commits.png)
 
 Note:
+- commits against Business::Mondo
 - leejo/create_mondo_emulator - created emulator
 - leejo/create_mondo_classes - created classes, tests against emulator
 - leejo/end_to_end_emulated_testing - end to end testing against emulator
@@ -317,6 +391,7 @@ Note:
 - yeah it's not perfect, will have bugs, is a work in progress (as per the Mondo API)
 - but it was a piece of cake to write because of the emulator
 - 99% of the work was done before it connected to a live or even test (non-local) server
+- and it turned out (to go back to the start of the talk)...
 
 ---
 
