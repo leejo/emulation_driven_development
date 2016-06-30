@@ -1,4 +1,4 @@
-Emulation Driven Development
+Mocking APIs for Emulation Driven Development
 
 (A one sentence suggestion padded out into a lightning talk)
 
