@@ -225,7 +225,7 @@ Note:
 ![](img/rwsc.jpg) ![](img/rip.jpg) ![](img/radr.jpg) ![](img/rwa.jpg) ![](img/rwc.jpg)
 
 Note:
-- five different years, four different authors, 
+- six years, five books, four different authors, 
 
 ---
 
