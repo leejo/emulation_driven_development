@@ -1,6 +1,6 @@
-Emulation Driven Development
+Mocking APIs for Emulation Driven Development
 
-(A one sentence suggestion padded out into a lightning talk)
+(A one sentence suggestion padded out into a ~~lightning~~ talk)
 
 [Lee Johnson](http://leejo.github.io)
 
@@ -157,10 +157,25 @@ Note:
 
 ---
 
+![ascribe](img/15_ascribe.png)
+
+
+Note:
+- ascribe, API buzzword bingo
+
+---
+
 "If the object returns application specific objects, messages and errors that should be acted on and these objects are valid a 200 response will be returned. Conversely, HTTP errors are considered exactly that... transport, non-application errors."
 
 Note:
 - (to follow) but...
+
+---
+
+![](img/uber.png)
+
+Note:
+- uber HTTP status codes
 
 ---
 
@@ -188,9 +203,59 @@ Note:
 
 ---
 
-## But that doesn't bother me
+### [REST on Wikipedia (Talk page)](https://en.wikipedia.org/wiki/Talk:Representational_state_transfer#Just_a_load_of_buzzwords.):
+
+* "Misleading"
+* "Just a load of buzzwords."
+* "REST examples are not restful"
+* "Random collection of unreferenced assertions"
+* "Inconsistent"
+* "Introduction Section Is Confusing"
+* "Contradiction in Introduction"
+
+[Microsoft Guidelines](https://github.com/Microsoft/api-guidelines/pull/29)
+
+Note:
+- visit link if you want a chuckle
+- can't even agree on what REST *is*
+- visit second link if you want more chuckles
+
+---
+
+![](img/rwsc.jpg) ![](img/rip.jpg) ![](img/radr.jpg) ![](img/rwa.jpg) ![](img/rwc.jpg)
+
+Note:
+- six years, five books, four different authors, 
+
+---
+
+![](img/tradh.jpg) ![](img/ur.jpg)
+
+Note:
+- JSON on the second not exactly great?
+
+---
+
+![](img/hate.png)
+
+[https://apisyouwonthate.com/](https://apisyouwonthate.com/)
+
+Note:
+- the inevitable end state?
+- i am not making this up!
+- "HATEful APIs?" (hypermedia as the engine of application state
+
+---
+
+## Enough!
 
 (I'm not into bikeshedding)
+
+![bikeshed](img/bikeshed.png)
+
+Note:
+- someone trademarked "bikeshed"!
+- or did they just trademark "shed"?
 
 ---
 
@@ -236,6 +301,9 @@ post '/ping/whoami' => sub {
 app->start;
 ```
 
+Note:
+- show mondo emulator
+
 ---
 
 <pre>
@@ -270,6 +338,8 @@ app->start;
 
 Note:
 - how it's run
+- run end_to_end.sh
+- then against live API (if possible)
 
 ---
 
@@ -406,10 +476,3 @@ Note:
 ---
 
 # GAH!
-
----
-
-![mondojo](img/mondojo.png)
-
----
-[mondojo](https://github.com/leejo/business-mondo/blob/leejo/mojo_client/bin/mondojo)
